@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naik Bakht | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-bg"></div>
+
+    <!-- Mobile Full-Screen Nav Drawer -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#experience" onclick="closeMenu()">Growth</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="resume.pdf" class="mobile-resume">Resume</a>
+    </nav>
+
+    <header>
+        <div class="logo">NB</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Growth</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="nav-cta-container">
+            <a href="resume.pdf" class="btn btn-resume">Resume</a>
+        </div>
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="container">
+        <section class="hero" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="glitch-text">NAIKBAKHT</h1>
+            <h2><span id="rotating-text">Developer</span></h2>
+            <p class="hero-sub">
+                Building scalable web applications with a focus on performance, usability, and clean design.
+            </p>
+            <div class="hero-action">
+                <a href="resume.pdf" class="intern-badge">
+                    <span class="pulse"></span> 🚀 Open to Internship Opportunities
+                </a>
+            </div>
+        </section>
+
+        <div class="bento-grid" id="about">
+            <div class="card card-large" data-aos="fade-up">
+                <h3 class="accent-title">About Me</h3>
+                <p class="text-dim">I'm a Computer Science student at Jinnah University for Women with a strong passion for web development, programming, and creating meaningful digital experiences. I enjoy transforming ideas into practical, user-centered applications with a focus on clean design and smooth functionality. Through academic and personal projects, I've developed a strong problem-solving mindset and the ability to approach challenges with both logic and creativity.</p>
+            </div>
+            
+            <div class="card" id="skills" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="accent-title">Tech Stack</h3>
+                <div class="skill-tags">
+                    <strong>Languages:</strong> Python, Java, JS, HTML5, CSS3, MySQL<br>
+                    <strong>Frameworks:</strong> Bootstrap, Flask
+                </div>
+            </div>
+            
+            <div class="card card-large" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="accent-title">Tools & Platforms</h3>
+                <p class="text-dim">
+                    Git & GitHub • VS Code • IntelliJ IDEA • Jupyter Notebook • Figma • Canva • Adobe Suite
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="accent-title">Design Philosophy</h3>
+                <p class="text-dim">User-centered design focusing on clean aesthetics and accessibility for all users.</p>
+            </div>
+        </div>
+
+        <section id="experience">
+            <h2 class="section-title" data-aos="fade-right">Professional <span>Growth</span></h2>
+            <div class="bento-grid">
+                <div class="card card-large" data-aos="fade-right">
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <h4>AI-Powered Systems Intern</h4>
+                                <p class="company">Alkhidmat Foundation • 2025</p>
+                            </div>
+                        </div>
+                        <p class="text-dim">Developed an automated WhatsApp Donation Processing System that reduced verification time from hours to minutes using AI and OCR.</p>
+                        <div class="tags-row">
+                            <span>Node.js</span><span>FastAPI</span><span>Google Gemini</span><span>EasyOCR</span>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Automated donation receipt verification via WhatsApp integration.</li>
+                            <li>Built an Admin Dashboard for real-time analytics and monitoring.</li>
+                            <li>Collaborated in a team to implement secure record management.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-left">
+                    <h3 class="accent-title">Certifications</h3>
+                    <div class="cert-item">
+                        <h5>Web Wizard Bootcamp</h5>
+                        <p class="org">AshreiTech-NASTP</p>
+                    </div>
+                    <div class="cert-item">
+                        <h5>Web Development Course</h5>
+                        <p class="org">Bano Qabil Program</p>
+                    </div>
+                </div>
+
+                <div class="card card-large" data-aos="fade-up">
+                    <h3 class="accent-title">Education</h3>
+                    <div class="edu-row">
+                        <div>
+                            <h4>Bachelor of Computer Science</h4>
+                            <p class="text-dim">Jinnah University for Women</p>
+                        </div>
+                        <span class="year-badge">Expected 2028</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title" data-aos="fade-right">Featured <span>Projects</span></h2>
+            <div class="bento-grid">                             
+                <div class="card project-card" data-aos="zoom-in">
+                    <h4>Cafeteria Queue System</h4>
+                    <p class="text-dim">Interactive Figma prototype for managing university food orders.</p>
+                    <a href="https://www.figma.com/proto/0hT3mz1I5QnU5ORNX3v67l/Uni_cafeteria_Queue_Sys?t=BFccKgUW2w0PpO55-1" target="_blank" class="project-btn"><i class="bi bi-figma"></i> View Design</a>
+                </div>
+
+                <div class="card project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <h4>Responsive Portfolio</h4>
+                    <p class="text-dim">Modern, mobile-first web architecture focusing on UX.</p>
+                    <a href="https://github.com/Naikbakht-zahir/Art-Gallery.git" target="_blank" class="project-btn"><i class="bi bi-github"></i> Code</a>
+                </div>
+
+                <div class="card card-large project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <h4>AI Language Translator</h4>
+                    <p class="text-dim">A specialized NLP tool built to bridge the communication gap between Persian and English speakers with linguistic precision.</p>
+                    <a href="https://github.com/Naikbakht-zahir/AI-based-Language-Translator.git" target="_blank" class="project-btn"><i class="bi bi-github"></i> Code</a>
+                </div>
+
+                <div class="card project-card" data-aos="zoom-in">
+                    <h4>Task Scheduler</h4>
+                    <p class="text-dim">Smart scheduling tool designed to organize workflows efficiently.</p>
+                    <a href="https://github.com/Naikbakht-zahir/Task-Scheduler.git" target="_blank" class="project-btn"><i class="bi bi-github"></i> Code</a>
+                </div>
+
+                <div class="card project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <h4>Brick Breaker Game</h4>
+                    <p class="text-dim">Java Swing game built with custom engine logic.</p>
+                    <a href="https://github.com/Naikbakht-zahir/Brick-Breaker-Game.git" target="_blank" class="project-btn"><i class="bi bi-github"></i> Code</a>
+                </div>
+
+                <div class="card project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <h4>Airline Reservation</h4>
+                    <p class="text-dim">Full-stack system with MySQL, class-based pricing, and admin analytics.</p>
+                    <a href="https://github.com/Naikbakht-zahir/AirLine-Reservation-System.git" target="_blank" class="project-btn"><i class="bi bi-github"></i> Code</a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" data-aos="fade-up">
+            <h2 class="section-title">Let's <span>Connect</span></h2>
+            <p class="text-dim">I'm currently open to internship opportunities. Let's build something impactful together.</p>
+            <div class="social-links">
+                <a href="mailto:naikbakht33@gmail.com" class="social-icon"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.linkedin.com/in/naikbakht-zahir-9802602b4" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Naikbakht-zahir" target="_blank" class="social-icon"><i class="bi bi-github"></i></a>
+            </div>
+            <p class="copyright">© 2026 NAIK BAKHT | Built with Precision & Passion</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Rotating text
+        const words = ["Developer", "Problem Solver", "UI/UX Enthusiast", "Engineer"];
+        let index = 0;
+        const textElement = document.getElementById("rotating-text");
+
+        function rotate() {
+            textElement.style.opacity = 0;
+            setTimeout(() => {
+                index = (index + 1) % words.length;
+                textElement.textContent = words[index];
+                textElement.style.opacity = 1;
+            }, 500);
+        }
+        setInterval(rotate, 3000);
+
+        // Hamburger menu
+        const hamburger = document.getElementById("hamburger");
+        const mobileNav = document.getElementById("mobileNav");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("open");
+            mobileNav.classList.toggle("open");
+            document.body.style.overflow = mobileNav.classList.contains("open") ? "hidden" : "";
+        });
+
+        function closeMenu() {
+            hamburger.classList.remove("open");
+            mobileNav.classList.remove("open");
+            document.body.style.overflow = "";
+        }
+    </script>
+</body>
+</html>
